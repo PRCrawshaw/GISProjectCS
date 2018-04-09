@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/philippa/projects/GISProject/GISProject/GISProject.csproj",
+      "projectUniqueName": "/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/GISProject.csproj",
       "projectName": "GISProject",
-      "projectPath": "/Users/philippa/projects/GISProject/GISProject/GISProject.csproj",
+      "projectPath": "/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/GISProject.csproj",
       "packagesPath": "/Users/philippa/.nuget/packages/",
-      "outputPath": "/Users/philippa/projects/GISProject/GISProject/obj",
+      "outputPath": "/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

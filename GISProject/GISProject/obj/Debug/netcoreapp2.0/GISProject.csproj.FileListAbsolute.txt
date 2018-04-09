@@ -9,3 +9,14 @@
 /Users/philippa/projects/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.AssemblyInfo.cs
 /Users/philippa/projects/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.dll
 /Users/philippa/projects/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.pdb
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/bin/Debug/netcoreapp2.0/GISProject.deps.json
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/bin/Debug/netcoreapp2.0/GISProject.runtimeconfig.json
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/bin/Debug/netcoreapp2.0/GISProject.runtimeconfig.dev.json
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/bin/Debug/netcoreapp2.0/GISProject.dll
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/bin/Debug/netcoreapp2.0/GISProject.pdb
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.csprojResolveAssemblyReference.cache
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.csproj.CoreCompileInputs.cache
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.AssemblyInfoInputs.cache
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.AssemblyInfo.cs
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.dll
+/Users/philippa/projects/GISProjectTopLevel/GISProject/GISProject/obj/Debug/netcoreapp2.0/GISProject.pdb
