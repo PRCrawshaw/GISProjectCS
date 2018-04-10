@@ -2,7 +2,10 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div>Map</div>
+<br>
+    <button onclick="getGeolocation()">Get Geolocation</button>
+    <button onclick="setMapToDefaultLocation()">Reset to ARA</button>
+<p>
 <div id="map"></div>
 
 @section scripts {
