@@ -21,5 +21,7 @@ namespace GISProject
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .Build();
+    
     }
 }
+
