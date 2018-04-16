@@ -1,11 +1,18 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model GISProject.Models.LocationModel
 
 <br>
-    <button onclick="getGeolocation()">Get Geolocation</button>
-    <button onclick="setMapToDefaultLocation()">Reset to ARA</button>
+    <button onclick="getGeolocation()" class="btn btn-primary">Get Geolocation</button>
+    <button onclick="setMapToDefaultLocation()" class="btn btn-primary">Reset to ARA</button>
+<br>
+<br>
+    <button onclick="getLocationFromServer(0)" class="btn btn-primary">Server gp1</button>
+    <button onclick="getLocationFromServer(1)" class="btn btn-primary">Server gp2</button>
+    <button onclick="getLocationFromServer(2)" class="btn btn-primary">Server gp2</button>
 <p>
+@Model.Name
 <div id="map"></div>
 
 @section scripts {

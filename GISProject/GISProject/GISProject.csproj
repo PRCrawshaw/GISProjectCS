@@ -14,8 +14,13 @@
 
   <ItemGroup>
     <None Remove="wwwroot\js\externalJS.js" />
+    <None Remove="Views\Home\MapAddress.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\js\externalJS.js" />
+    <Content Remove="Views\Home\MapAddress.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Home\MapAddress.cshtml.cs" />
   </ItemGroup>
 </Project>
