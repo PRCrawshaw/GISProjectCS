@@ -25,15 +25,20 @@ function AlertName(name)
 function initMap()
 {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 19,
+          zoom: 17,
           center: defaultLocation
         });
-        infoWindow = new google.maps.InfoWindow;
+        // quick and nasty - window.variable sets global variable note new google.maps.??? cannot be set at the top
+        window.infoWindow = new google.maps.InfoWindow;
+        window.bounds = new google.maps.LatLngBounds();
         setMapToDefaultLocation();
+        console.log('Zoom is: '+map.getZoom()); 
 }
 
 function deleteAllMarkers()
 {
+  bounds = new google.maps.LatLngBounds();
+  infoWindow.close();
   if (markersArray) {
     var arrayLength = markersArray.length;
     for (var i = 0; i < arrayLength; i++) {
@@ -46,6 +51,7 @@ function deleteAllMarkers()
 function setMapToDefaultLocation()
 {
     deleteAllMarkers();
+    map.setZoom(17);
     map.setCenter(defaultLocation);
     markersArray[0] = new google.maps.Marker({
         position: defaultLocation,
@@ -56,7 +62,8 @@ function setMapToDefaultLocation()
 
 function setMarkers(positionsArray)
 {
-    for (var i = 0; i < positionsArray.length; i++) {
+    deleteAllMarkers();
+   for (var i = 0; i < positionsArray.length; i++) {
         marker = new google.maps.Marker({
         map: map,
         position: {lat: positionsArray[i].lat, lng: positionsArray[i].lng}
@@ -77,7 +84,7 @@ function getGeolocation()
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-
+        map.setZoom(19);
         infoWindow.setPosition(pos);
         infoWindow.setContent(position.coords.latitude + ', '+position.coords.longitude);
         infoWindow.open(map);
@@ -97,13 +104,11 @@ function getLocationFromServer(group)
 {
     var client = new HttpClient();
     client.get("http://localhost:3001/tests/"+group, function(response) {
-        console.log(response);
         var jsonData = JSON.parse(response);
         var positionsArray = [];
         for (var i = 0; i < jsonData.data.length; i++) {
             var data = jsonData.data[i];
             positionsArray[i] = data;
-            console.log(data.lat);
         }
         setMarkers(positionsArray);
     });
